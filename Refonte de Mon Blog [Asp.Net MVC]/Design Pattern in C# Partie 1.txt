@@ -1,0 +1,1 @@
+le Blog sera réalisé en mode Single Page Application avec Angular JS dans aps.Net MVC.

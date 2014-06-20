@@ -1,0 +1,22 @@
+//Dependy Injecion
+//
+Ninject 
+
+//////////// Repository Operation Pseudo Code   ////////////////////
+
+Repository :::::////
+Debut Algo
+    DbContext _ctx : 
+	_Instancier : DbContext
+	
+	Debut Method : obtenir toutes les questios
+		ObtenirToutesLesQuestions()
+			retourner _ctx.Questions
+     Fin 		 
+		 
+	Debut Method : Obtenir les reponses ratatché a une question	
+			ObtenirToutesReponsesParQuestions(QUESTIONENTREEID)
+			   retourner _ctx.Reponses.OU.(Reponse => Reponses.QUESTIONID == QUESTIONENTREEID)
+     Fin Method
+
+Fin Algo	 

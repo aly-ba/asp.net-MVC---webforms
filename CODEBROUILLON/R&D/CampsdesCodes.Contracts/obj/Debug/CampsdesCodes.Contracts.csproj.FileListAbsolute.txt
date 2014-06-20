@@ -1,0 +1,7 @@
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampsdesCodes.Contracts\bin\Debug\CampsdesCodes.Contracts.dll
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampsdesCodes.Contracts\bin\Debug\CampsdesCodes.Contracts.pdb
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampsdesCodes.Contracts\bin\Debug\CampdesCodes.Models.dll
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampsdesCodes.Contracts\bin\Debug\CampdesCodes.Models.pdb
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampsdesCodes.Contracts\obj\Debug\CampsdesCodes.Contracts.csprojResolveAssemblyReference.cache
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampsdesCodes.Contracts\obj\Debug\CampsdesCodes.Contracts.dll
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampsdesCodes.Contracts\obj\Debug\CampsdesCodes.Contracts.pdb

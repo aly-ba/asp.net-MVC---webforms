@@ -1,0 +1,61 @@
+﻿@model IEnumerable<MESSADIIS.Data.Question> 
+
+@{ ViewBag.Title = "Home Page"; }
+
+@section Scripts {
+    <script src="~/Js/home-index.js"></script>
+}
+
+    <button type="button" class="btn btn-default">
+        <h2>Index</h2>
+    </button>
+<div data-ng-controller="homeIndexController">
+    <div class="message-header">
+        <h1>Flux des derniers Questions /Réponses </h1>
+        <p class="lead">Questions / Réponses récentes</p>
+        <div> Nombres de Messages: {{dataCount}}</div>
+    </div>
+
+    <div class="progress rogress-stripded active" data-ng-show="EstOccuppe">
+        <div class="bar" style="width: 100%;"></div>
+    </div>
+
+
+    <div class="messages">
+        <div class="message row" data-ng-repeat="i in data">
+            <div class="title span10">
+                <button class="title btn btn-danger">Question: {{ i.titre}}</button>
+            </div>
+            <div class="date span2">
+                {{i.creation | date:"medium"}}
+            </div>
+            <div class="contents span12">
+                {{i.texte }}
+            </div>
+    
+            <div class="toolbar span12">
+                <button class="btn btn-info reply-button">Reponse</button>
+            </div>
+            <div class="replies span12">
+                <div class="reply">
+                    <div class="reply" data-ng-repeat="r in i.reponses">
+                    <div class="created pull r-right">
+                        {{ r.creation}}
+                    </div>
+                    <div class="content">
+                        {{ r.texte}}
+                    </div>
+                    <div class="content">
+                        {{ r.id}}
+                    </div>
+                    </div>
+                </div>
+
+                
+               
+            </div>
+        </div>
+
+</div>
+</div>
+

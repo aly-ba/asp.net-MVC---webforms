@@ -1,0 +1,4 @@
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\AccountAtAGlance\AccountAtAGlance.Model\bin\Debug\AccountAtAGlance.Model.dll
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\AccountAtAGlance\AccountAtAGlance.Model\bin\Debug\AccountAtAGlance.Model.pdb
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\AccountAtAGlance\AccountAtAGlance.Model\obj\Debug\AccountAtAGlance.Model.dll
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\AccountAtAGlance\AccountAtAGlance.Model\obj\Debug\AccountAtAGlance.Model.pdb

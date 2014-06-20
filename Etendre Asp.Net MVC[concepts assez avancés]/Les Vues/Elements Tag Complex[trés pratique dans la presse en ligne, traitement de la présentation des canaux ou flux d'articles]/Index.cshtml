@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (var tbl = Html.Table())
+{
+    using (var row = tbl.Row(CellType.Header))
+    {
+        @row.Cell("Header 1")
+        @row.Cell("Header 2")
+    }
+    
+    using (var row = tbl.Row())
+    {
+        @row.Cell("Data 1")
+        @row.Cell("Data 2")
+    }
+    
+    using (var row = tbl.Row())
+    {
+        @row.Cell("Colspan Data", new { colspan = 2 })
+    }
+    
+     using (var row = tbl.Row())
+    {
+        @row.Cell("Data 3")
+        @row.Cell("Data 4")
+    }
+}
+

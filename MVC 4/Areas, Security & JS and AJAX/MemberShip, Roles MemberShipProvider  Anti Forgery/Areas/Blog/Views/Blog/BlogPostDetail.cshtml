@@ -1,0 +1,14 @@
+﻿@model Lesson13.Areas.Blog.Models.BlogPost
+@{
+    var publishedDate = Model.PublishDate;
+}
+
+<div>
+    <h2>@Html.RouteLink(Model.Title, "BlogDetails", 
+        new { year = publishedDate.Year, 
+            month = publishedDate.Month.ToString("00"), 
+            day = publishedDate.Day.ToString("00"), 
+            title = Model.EncodedTitle})</h2>
+    <p>@Model.Message</p>
+    <p>@Model.PublishDate.ToShortDateString()</p>
+</div>

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Lesson09.Models.BlogPost>
+
+@{
+    ViewBag.Title = "Recent Blog Posts";
+}
+
+@foreach (var post in Model)
+{
+    @Html.Partial("BlogPostDetail", post)
+
+}

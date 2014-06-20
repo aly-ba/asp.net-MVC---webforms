@@ -1,0 +1,14 @@
+﻿@model Lesson11.Models.BlogPost
+
+@{
+    ViewBag.Title = "Insert";
+}
+
+<h2>Insert</h2>
+
+@using (var frm = Html.BeginForm())
+{
+    @Html.EditorFor(m => m)
+
+    <p><input type="submit" value="Submit" /></p>
+}

@@ -1,0 +1,15 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "Home Page";
+    //Func<dynamic, HelperResult> bold = @<strong>@item</strong>
+}
+
+<h2>Index </h2>
+<p> Th is is <b> blod</b> And Here is more <b>Bold text</b></p>
+
+<p>This is @bold("bold") And Here is more <b>Bold text</b></p>
+
+@Html.Repeater(Model, @<div>@item</div>)
+@<p>@item</p>, @<hr /></p>
+

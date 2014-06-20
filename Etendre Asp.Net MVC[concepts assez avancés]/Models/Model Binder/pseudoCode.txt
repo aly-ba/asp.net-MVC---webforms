@@ -1,0 +1,8 @@
+Pseudo Code: IModelBinder
+P : Prive
+R : Return
+R: 
+BinModel : objet Controllercontext, objet ModelBindingContext
+    Obtenir  := BindingContext.ValueProvider
+    Recuprer Champ := (transtyper)priver.GetValue(" champs").ConverTo(Typeof(Champ))
+    R   Champ

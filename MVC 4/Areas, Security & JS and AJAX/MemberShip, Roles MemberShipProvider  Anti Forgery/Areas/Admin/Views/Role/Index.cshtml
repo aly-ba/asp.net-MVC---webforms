@@ -1,0 +1,24 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.RouteLink("Create new Role", "AdminDefault", new { controller = "Role", action = "Create" })
+
+<ul>
+    @foreach (var role in Model)
+    {
+        <li>@Html.RouteLink(role, "AdminDefault", new { controller = "Role", action = "Edit", id = role})
+            <ul>
+                @foreach (var user in Roles.GetUsersInRole(role))
+                {
+                    <li>@user</li>
+                }
+            </ul>
+
+        </li>
+    }
+</ul>

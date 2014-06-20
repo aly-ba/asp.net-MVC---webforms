@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Lesson14.Areas.Blog.Models.BlogPost>
+
+<ul>
+    @foreach (var post in Model)
+    {
+        <li>@post.Title</li>
+    }
+
+</ul>

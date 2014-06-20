@@ -1,0 +1,26 @@
+//Pseudo Code Envoie Mail
+
+//biblio .net à utiliser
+using System.Diagnostics;//debogure l'envoie mail
+using System.Net.Mail;
+
+	EnvoyerMail
+	
+	Debut Algo
+	BOOLEAN       EnvoyerMail(Chaine Expréditeur, chaine Destinataire
+		                    ,chaine Sujet, chaine Message )
+		   ESSAYER					
+		   :
+		      cvar msg = Instance MailMessage( Expréditeur, 
+			                Destinataire,Sujet,Message)
+			  cvar client = Instance Smtpclient()
+
+              Client.Envoie(msg) //fonction send .Net.Mail			  
+		    :
+        ATTRAPPER(EXCEPTION EX)
+             :
+			  retourner FAUX;
+             :			 
+	  
+	RETOURNER VRAI
+	Fin Algo 

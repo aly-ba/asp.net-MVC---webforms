@@ -1,0 +1,15 @@
+﻿@model System.String
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (var frm = Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    
+    @Html.Hidden("oldRoleName", Model)
+    @Html.Label("newRoleName", "Edit:") @Html.TextBox("newRoleName", Model)
+    <input type="submit" value="Edit Role" />
+}

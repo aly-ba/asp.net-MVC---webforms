@@ -1,0 +1,12 @@
+﻿@model Lesson13.Areas.Blog.Models.BlogPost
+
+<h2>Insert</h2>
+
+@using (var frm = Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    @Html.EditorFor(m => m)
+
+    <input type="submit" value="Submit" />
+}

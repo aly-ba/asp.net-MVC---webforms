@@ -1,0 +1,7 @@
+﻿@model Lesson09.Models.BlogPost
+
+@{
+    ViewBag.Title = Model.PostTitle;
+}
+
+@Html.Partial("BlogPostDetail", Model)

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<blogPosts>
+  <blogPost id="1">
+    <created>1/23/2013 12:00:00 AM</created>
+    <title>Blog Post 1</title>
+    <message>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non massa vel nisi sodales faucibus. Vestibulum vitae ipsum quis felis elementum dapibus non sed orci. Aenean eu pharetra metus. Suspendisse porta tortor vitae arcu porttitor condimentum at volutpat nunc. Nulla nec dui eros. Duis sit amet justo at diam ultricies molestie. Maecenas dui nunc, molestie in metus et, lacinia mollis quam. Nunc iaculis malesuada dolor nec laoreet. Cras ac condimentum nisl. Quisque at augue accumsan, euismod ante sed, sodales enim. Pellentesque commodo magna ipsum, non pulvinar enim volutpat non. Nullam ultrices dignissim pretium. Nam non ipsum elit. Nam at fermentum quam.</message>
+  </blogPost>
+  <blogPost id="2">
+    <created>2013-02-23T00:00:00</created>
+    <title>Blog Post 2</title>
+    <message>Etiam eu placerat turpis. Nulla aliquam metus at nisi vestibulum, vel fringilla lacus dapibus. Cras at tortor nec elit venenatis tincidunt posuere ut est. Maecenas sollicitudin eros a orci dignissim scelerisque. Maecenas mattis, libero non dictum condimentum, purus ante ornare diam, at mattis diam risus et neque. Praesent placerat, libero et tincidunt rhoncus, lacus augue gravida nibh, vitae venenatis orci nunc placerat metus. Sed placerat odio vel mi ullamcorper placerat. Donec convallis, odio ut dignissim lobortis, neque nisi adipiscing ligula, non feugiat est lacus quis sem. Maecenas aliquam, nibh id sollicitudin vehicula, dolor dui porttitor ipsum, nec interdum libero turpis vitae diam.</message>
+  </blogPost>
+  <blogPost id="3">
+    <created>2013-03-23T00:00:00</created>
+    <title>Blog Post 3</title>
+    <message>Aenean consectetur et turpis eu volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus urna, laoreet a leo blandit, aliquet porttitor lacus. Nam egestas pretium dignissim. Curabitur luctus nibh vitae orci consequat, quis fermentum turpis mattis. Fusce eget est non tortor scelerisque accumsan id vel quam. Aliquam erat volutpat. Ut mi sapien, facilisis eu dui sed, gravida euismod neque. Nulla risus turpis, auctor a semper at, venenatis ornare nisl. Pellentesque a pellentesque lectus. Quisque dignissim lacinia tempus. Ut cursus auctor augue eget sagittis. Pellentesque sollicitudin lectus a tortor molestie mollis. Curabitur convallis pretium ipsum, quis mattis lacus pulvinar et. Praesent vitae fermentum quam, nec rutrum velit.</message>
+  </blogPost>
+  <blogPost id="4">
+    <created>2013-04-23T00:00:00</created>
+    <title>Blog Post 4</title>
+    <message>Nullam non aliquet mi, nec hendrerit leo. Ut sapien dui, blandit nec molestie viverra, bibendum non ante. Morbi ac neque nunc. Vestibulum ac porttitor dolor. Cras a interdum turpis. Suspendisse potenti. Pellentesque pulvinar massa ut purus elementum rutrum. Proin gravida nisl sit amet nisl fermentum, in tempus ante pulvinar. Sed nec eros quis libero posuere egestas in vel libero. Vivamus ultricies gravida mauris in mattis. Praesent posuere ligula eget nunc ultrices tincidunt. Nam rutrum libero eget velit convallis tempus. Fusce eget nibh at ipsum vehicula rutrum. Fusce eget interdum augue, eu tincidunt metus.</message>
+  </blogPost>
+  <blogPost id="5">
+    <created>2013-05-23T00:00:00</created>
+    <title>Blog Post 5</title>
+    <message>Suspendisse in vehicula mi, tincidunt pharetra felis. Mauris auctor ligula nibh, et dictum metus tempus sed. Sed blandit elit non eleifend eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer vitae orci nunc. Suspendisse at nulla convallis, hendrerit velit at, malesuada nunc. Morbi eleifend urna sit amet rutrum malesuada. Etiam laoreet, urna ac lacinia dignissim, erat magna volutpat erat, ut accumsan mauris sapien eu lorem. Quisque commodo sed sem id cursus. Proin dictum nulla bibendum lobortis malesuada. Nulla facilisi.</message>
+  </blogPost>
+  <blogPost id="6">
+    <created>8/25/2013 12:36:17 AM</created>
+    <title>This is a test</title>
+    <message>I hope this works.</message>
+  </blogPost>
+</blogPosts>

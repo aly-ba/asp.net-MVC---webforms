@@ -1,0 +1,21 @@
+//Pseudo Code HomeController // quelques fonctins
+Notes : créer le controlleur comme un objet qui herite une classe abstrite Controller
+Pour ne pas casser nos méthodes de developpement , on continue à respecter le Open Close Principle, 
+The Sepration of Concerns
+Debut
+	HomeController : Controller
+	:
+	APPELER InterfaceMAILSERVICE _mail.
+	APPELER InterfaceRepository  _repo.
+	
+	//creer le contructeur du Home Controlleur
+	HomeController(InterfaceMAILSERVICE  _mail, InterfaceRepository  repo)
+	   :
+			_mail =mail .
+			_repo = repo.
+	    :
+
+	//L'index	//charge toutes les Questions Odonner par Date
+	Index:   
+
+    var  cQuestions = _repo.GetTopics().OrderbyDescending(t =t.created).	

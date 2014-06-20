@@ -1,0 +1,20 @@
+﻿@model Lesson09.Models.BlogPost
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (var frm = Html.BeginForm()) {
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.Created)
+
+    <p>@Html.LabelFor(m => m.PostTitle) @Html.EditorFor(m => m.PostTitle)</p>
+    
+    <p>@Html.LabelFor(m => m.PostMessage)<br /> 
+       @Html.TextAreaFor(m => m.PostMessage, new { @class = "blog-message-editor" })
+    </p>
+    
+    <p><input type="submit" value="Submit" /></p>
+}

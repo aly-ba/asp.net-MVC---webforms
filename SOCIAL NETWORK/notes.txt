@@ -1,0 +1,8 @@
+notes:
+Valeur de retour
+Type : System.Guid
+Nouvel objet GUID.
+Notes
+Il s'agit d'une méthode static pratique que vous pouvez appeler pour obtenir un nouveau Guid.
+La probabilité pour que les valeurs du nouveau Guid soient toutes égales à zéro ou à tout autre Guid est très basse.
+ Vous pouvez déterminer si le GUID se compose de tous les zéros en la comparaison avec Guid.Empty.

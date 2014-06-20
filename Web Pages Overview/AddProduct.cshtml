@@ -1,0 +1,55 @@
+﻿@{
+    Page.Title = "Add New Product";
+    Layout = "~/_SiteLayout.cshtml";
+    
+    // Declare Validation
+    Validation.RequireField("ProductName", "You are missing a Product Name");
+    Validation.RequireField("Price", "Out products are not FREE!");
+    Validation.Add("ProductName", Validator.StringLength(10, 2));
+    Validation.Add("Price", Validator.Float("Price should be a number"));
+    Validation.Add("Price", Validator.Range(0.99D, 100D, "Price is outside the limits for our store"));
+    
+    var productName = "";
+    var price = 0.00M;
+    
+    if (IsPost && Validation.IsValid()) {
+        productName = Request.Form["ProductName"];
+        price = Convert.ToDecimal(Request.Form["Price"]);
+        
+        var db = Database.Open("StarterSite");
+        db.Execute("INSERT INTO Products (Name, Price) VALUES (@0, @1)", productName, price);
+        
+    }
+    
+}
+
+<div>
+
+    <form method="post">
+
+        <h2>Add New Product</h2>
+
+        @Html.ValidationSummary()
+
+        <fieldset>
+            <legend>Product Information</legend>
+            <p>
+                <label for="ProductName">Name:</label>
+                <input type="text" name="ProductName" value="@Request.Form["ProductName"]" />
+                <br />
+                @Html.ValidationMessage("ProductName")
+            </p>
+            <p>
+                <label for="Price">Price:</label>
+                <input type="text" name="Price" value="@Request.Form["Price"]" />
+                <br />
+                @Html.ValidationMessage("Price")
+            </p>
+            <p>
+                <input type="submit" name="btnSubmit" value="Add Product" /></p>
+        </fieldset>
+
+
+    </form>
+
+</div>

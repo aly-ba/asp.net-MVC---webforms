@@ -1,0 +1,22 @@
+﻿Authorization(IAUthorizationFilter)[Authorization Filter, RequireHttps, 
+Action(IActionFitler)
+Result(IResultFilter)
+Exception(IExceptionFilter)
+
+
+=====================
+Controller Pipeline
+==================
+
+Controller Creation
+		-Authorization Filters Execute:Authorization Filter, RequireHttps,  Action(IActionFitler)
+
+		-OnActionExcuting
+Action Method Executes
+        -OnActionExcuted
+
+		-OnResulTing
+Result Executes and Returns
+       -OnResumtExecuted
+
+	   -Exception

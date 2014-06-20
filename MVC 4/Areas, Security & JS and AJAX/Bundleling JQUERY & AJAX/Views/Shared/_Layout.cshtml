@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.RouteLink("Home", "Default", new { action = "Index" })</li>
+                            <li>@Html.RouteLink("Blog", "BlogDefault", new { action = "Index" })</li>
+                            <li>@Html.RouteLink("About", "Default", new { action = "About" })</li>
+                            <li>@Html.RouteLink("Contact", "Default", new { action = "Contact" })</li>
+                            @if (Roles.IsUserInRole("Admin")) {
+                            <li>@Html.RouteLink("Admin", "AdminDefault", new { controller = "Admin", action = "Index" })</li>
+                            }
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                <div id="searchResults"></div>
+
+                @Ajax.RouteLink("Search for 'Post' (Html)", "BlogAction",
+                    new { controller = "blog", action = "SearchHtml", value = "post" },
+                    new AjaxOptions() {
+                        OnSuccess = "html.loadSearchResults"   
+                    })
+
+
+                @Ajax.RouteLink("Search for 'Post' (json)", "BlogAction",
+                    new { controller = "blog", action = "searchjson", value = "post" },
+                    new AjaxOptions() {
+                        OnSuccess = "json.loadSearchResults"   
+                    })
+
+                @Ajax.RouteLink("Search for 'Post' (mvc)", "BlogAction",
+                    new { controller = "blog", action = "searchhtml", value = "post" },
+                    new AjaxOptions() {
+                        InsertionMode = InsertionMode.Replace,
+                        UpdateTargetId = "searchResults"
+                    })
+
+                @using (var frm = Ajax.BeginRouteForm("BlogAction",
+                    new {controller = "blog", action = "searchhtml" },
+                    new AjaxOptions() {
+                           InsertionMode = InsertionMode.Replace,
+                            UpdateTargetId = "searchResults"
+                })) {
+                    @Html.TextBox("value") <input type="submit" value="Search" />
+                }   
+
+
+
+
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/jqueryui")
+        @Scripts.Render("~/bundles/search")
+
+
+        @RenderSection("scripts", required: false)
+        <script>
+            $(".datePicker").datepicker();
+        </script>
+    </body>
+</html>

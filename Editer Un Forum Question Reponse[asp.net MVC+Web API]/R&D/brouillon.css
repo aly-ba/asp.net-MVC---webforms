@@ -1,0 +1,8 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+<h2>Index</h2>
+<div class="offsetspan3 foot"> Div By BootsTrap Grid </div>
+<div class="span3 foot"> Div By BootsTrap Grid </div>
+<div class="span3 foot"> Div By BootsTrap Grid </div>
+<div class="span3 foot"> Div By BootsTrap Grid </div>

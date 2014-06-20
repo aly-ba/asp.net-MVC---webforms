@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (var frm = Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.TextArea("roleName")
+
+    <input type="submit" />
+}

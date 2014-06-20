@@ -1,0 +1,13 @@
+﻿@model Lesson13.Areas.Blog.Models.BlogPost
+@{
+    var publishedDate = Model.PublishDate;
+}
+
+<div>
+    <h2>@Html.RouteLink(Model.Title, "AdminDefault",
+        new { controller = "Blog", action = "edit", id = Model.Id })</h2>
+    <p>@Model.Message</p>
+    <p>@Model.PublishDate.ToShortDateString()</p>
+    <p>@Html.RouteLink("Delete", "AdminDefault",
+        new { controller = "Blog", action = "delete", id = Model.Id })</p>
+</div>

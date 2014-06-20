@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Lesson14.Areas.Blog.Models.BlogPost>
+
+@{
+    ViewBag.Title = "Blog";
+}
+
+<h4>@Html.RouteLink("Create New Blog Post", "AdminDefault", new { action = "Insert"}) </h4>
+
+@foreach (var item in Model)
+{
+    @Html.Partial("BlogPostDetail", item)
+}

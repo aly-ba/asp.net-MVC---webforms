@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div>
+    @using (Html.BeginForm())
+    {
+        <p>@Html.TextBox("firstName")</p>
+        <p>@Html.TextBox("lastName")</p>
+        
+        <input type="submit" value="Submit" />
+    }
+    
+</div>

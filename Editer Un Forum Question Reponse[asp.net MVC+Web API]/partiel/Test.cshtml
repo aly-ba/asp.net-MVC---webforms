@@ -1,0 +1,48 @@
+﻿@model IEnumerable<MESSADIIS.Data.Question> 
+
+
+@{ ViewBag.Title = "Home Page"; }
+
+    <button type="button" class="btn btn-default">
+        <h2>Test</h2>
+    </button>
+
+    <div class="message-header">
+        <h1>Flux des derniers Questions /Réponses </h1>
+        <p class="lead">Questions / Réponses récentes</p>
+    </div>
+
+   <div class="messages">
+        @foreach (var item in Model)
+        { 
+        <div class="message row">
+            <div class="title span10">
+                <button class="title btn btn-danger">Question</button>
+            </div>
+            <div class="date span2">
+                @item.Creation
+            </div>
+            <div class="contents span12">
+                @item.Titre
+                @item.Texte
+
+            </div>
+             @foreach(var rep in @item.Reponses)
+             {
+            <div class="toolbar span12">
+                <button class="btn btn-info reply-button">Reponses</button>
+            </div>
+            <div class="replies span12">
+                <div class="reply">
+                    <div class="created pull-right">
+                       @rep.Creation
+                    </div>
+                    <div class="content">
+                        @rep.Texte
+                    </div>
+                </div>
+            </div>
+            }
+       </div>
+        }
+  </div>

@@ -1,0 +1,5 @@
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampdesCodes.Models\obj\Debug\CampdesCodes.Models.csprojResolveAssemblyReference.cache
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampdesCodes.Models\bin\Debug\CampdesCodes.Models.dll
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampdesCodes.Models\bin\Debug\CampdesCodes.Models.pdb
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampdesCodes.Models\obj\Debug\CampdesCodes.Models.dll
+c:\users\eyebe\pictures\documents\visual studio 2012\Projects\CampdesCodes\CampdesCodes.Models\obj\Debug\CampdesCodes.Models.pdb

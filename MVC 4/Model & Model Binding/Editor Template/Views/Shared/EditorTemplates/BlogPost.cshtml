@@ -1,0 +1,11 @@
+﻿@model Lesson11.Models.BlogPost
+
+@Html.HiddenFor(m => m.Id)
+
+    <p>@Html.LabelFor(m => m.PostTitle) @Html.EditorFor(m => m.PostTitle) @Html.ValidationMessageFor(m => m.PostTitle)</p>
+    
+    <p>@Html.LabelFor(m =>m.Created) @Html.EditorFor(m => m.Created) @Html.ValidationMessageFor(m => m.Created)</p>
+    
+    <p>@Html.LabelFor(m => m.PostMessage) @Html.ValidationMessageFor(m => m.PostMessage)<br /> 
+       @Html.TextAreaFor(m => m.PostMessage, new { @class = "blog-message-editor" })
+    </p>

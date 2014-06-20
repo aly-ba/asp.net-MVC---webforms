@@ -1,0 +1,14 @@
+﻿@model Lesson09.Models.BlogPost
+
+@{
+    ViewBag.Title = "Insert";
+}
+
+<h2>Insert</h2>
+
+@using (var frm = Html.BeginForm())
+{
+    <p>@Html.LabelFor(m => m.PostTitle) @Html.TextBoxFor(m => m.PostTitle)</p>
+    <p>@Html.LabelFor(m => m.PostMessage) @Html.TextAreaFor(m => m.PostMessage)</p>
+    <p><input type="submit" value="Submit" /></p>
+}

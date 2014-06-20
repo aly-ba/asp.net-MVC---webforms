@@ -1,0 +1,11 @@
+﻿@using LesVues 
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2> 
+
+@Html.Paragraph("test", new { id="test", @class = "buildertest" })
+@Html.Raw(Html.Paragraph("test")) 
+@Html.Raw(Html.Paragraph("test"))

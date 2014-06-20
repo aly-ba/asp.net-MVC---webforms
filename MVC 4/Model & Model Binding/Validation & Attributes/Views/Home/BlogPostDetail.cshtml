@@ -1,0 +1,9 @@
+﻿@model Lesson10.Models.BlogPost
+
+<div class="blog-post">
+    <h3>@Html.RouteLink(Model.PostTitle, "Default", new { action = "Detail", id = Model.Id })</h3>
+    <p>@Model.PostMessage</p>
+    <p>Created @Model.Created.ToLongDateString()</p>
+    <p>@Html.RouteLink("Edit", "Default", new { action = "edit", id = Model.Id }) | 
+        @Html.RouteLink("Delete", "Default", new { action = "delete", id = Model.Id })</p>
+</div>
